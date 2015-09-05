@@ -1,0 +1,30 @@
+c:\users\yozora\documents\visual studio 2015\Projects\B3ArduinoControler\B3ArduinoControler\bin\Debug\B3ArduinoControler.exe.config
+c:\users\yozora\documents\visual studio 2015\Projects\B3ArduinoControler\B3ArduinoControler\bin\Debug\B3ArduinoControler.exe
+c:\users\yozora\documents\visual studio 2015\Projects\B3ArduinoControler\B3ArduinoControler\bin\Debug\B3ArduinoControler.pdb
+c:\users\yozora\documents\visual studio 2015\Projects\B3ArduinoControler\B3ArduinoControler\obj\Debug\B3ArduinoControler.csprojResolveAssemblyReference.cache
+c:\users\yozora\documents\visual studio 2015\Projects\B3ArduinoControler\B3ArduinoControler\obj\Debug\MainWindow.g.cs
+c:\users\yozora\documents\visual studio 2015\Projects\B3ArduinoControler\B3ArduinoControler\obj\Debug\App.g.cs
+c:\users\yozora\documents\visual studio 2015\Projects\B3ArduinoControler\B3ArduinoControler\obj\Debug\B3ArduinoControler_MarkupCompile.cache
+c:\users\yozora\documents\visual studio 2015\Projects\B3ArduinoControler\B3ArduinoControler\obj\Debug\B3ArduinoControler_MarkupCompile.lref
+c:\users\yozora\documents\visual studio 2015\Projects\B3ArduinoControler\B3ArduinoControler\obj\Debug\MainWindow.baml
+c:\users\yozora\documents\visual studio 2015\Projects\B3ArduinoControler\B3ArduinoControler\obj\Debug\B3ArduinoControler.g.resources
+c:\users\yozora\documents\visual studio 2015\Projects\B3ArduinoControler\B3ArduinoControler\obj\Debug\B3ArduinoControler.Properties.Resources.resources
+c:\users\yozora\documents\visual studio 2015\Projects\B3ArduinoControler\B3ArduinoControler\obj\Debug\B3ArduinoControler.csproj.GenerateResource.Cache
+c:\users\yozora\documents\visual studio 2015\Projects\B3ArduinoControler\B3ArduinoControler\obj\Debug\B3ArduinoControler.exe
+c:\users\yozora\documents\visual studio 2015\Projects\B3ArduinoControler\B3ArduinoControler\obj\Debug\B3ArduinoControler.pdb
+C:\workspace\B3SerialController\B3SerialController\B3ArduinoControler\bin\Debug\B3ArduinoControler.exe.config
+C:\workspace\B3SerialController\B3SerialController\B3ArduinoControler\obj\Debug\B3ArduinoControler.exe
+C:\workspace\B3SerialController\B3SerialController\B3ArduinoControler\obj\Debug\B3ArduinoControler.pdb
+C:\workspace\B3SerialController\B3SerialController\B3ArduinoControler\bin\Debug\B3ArduinoControler.exe
+C:\workspace\B3SerialController\B3SerialController\B3ArduinoControler\bin\Debug\B3ArduinoControler.pdb
+C:\workspace\B3SerialController\B3SerialController\B3ArduinoControler\obj\Debug\B3ArduinoControler.csprojResolveAssemblyReference.cache
+C:\workspace\B3SerialController\B3SerialController\B3ArduinoControler\obj\Debug\MainWindow.g.cs
+C:\workspace\B3SerialController\B3SerialController\B3ArduinoControler\obj\Debug\Window1.g.cs
+C:\workspace\B3SerialController\B3SerialController\B3ArduinoControler\obj\Debug\App.g.cs
+C:\workspace\B3SerialController\B3SerialController\B3ArduinoControler\obj\Debug\B3ArduinoControler_MarkupCompile.cache
+C:\workspace\B3SerialController\B3SerialController\B3ArduinoControler\obj\Debug\B3ArduinoControler_MarkupCompile.lref
+C:\workspace\B3SerialController\B3SerialController\B3ArduinoControler\obj\Debug\MainWindow.baml
+C:\workspace\B3SerialController\B3SerialController\B3ArduinoControler\obj\Debug\Window1.baml
+C:\workspace\B3SerialController\B3SerialController\B3ArduinoControler\obj\Debug\B3ArduinoControler.g.resources
+C:\workspace\B3SerialController\B3SerialController\B3ArduinoControler\obj\Debug\B3ArduinoControler.Properties.Resources.resources
+C:\workspace\B3SerialController\B3SerialController\B3ArduinoControler\obj\Debug\B3ArduinoControler.csproj.GenerateResource.Cache
