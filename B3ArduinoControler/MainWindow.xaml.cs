@@ -159,6 +159,7 @@ namespace B3ArduinoControler
                 if (this.isconnect == true)
                 {
                     this.isconnect = false;
+                    this.serial.Close();
                     this.ManipulationWindow.TextBlock_IsConnect.Text = this.isconnect.ToString();
                 }
             }
