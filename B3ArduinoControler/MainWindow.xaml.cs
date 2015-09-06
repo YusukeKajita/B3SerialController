@@ -23,6 +23,7 @@ namespace B3ArduinoControler
         System.IO.Ports.SerialPort serial;
         private bool isconnect;
         public Window2 ManipulationWindow;
+        public int i = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -104,9 +105,17 @@ namespace B3ArduinoControler
             {
                 if (this.isconnect)
                 {
-                    this.serial.Write(e.Key.ToString());
+                    for (int i = 0; i < 500; i++)
+                    {
+                        this.serial.Write(e.Key.ToString()[0].ToString());
+                        if(this.serial.BytesToRead > 0)
+                        {
+                            this.serial.ReadByte();
+                            break;
+                        }
+                    }
                 }
-                this.ManipulationWindow.TextBlock_Keyborad.Text = "\"" + e.Key.ToString() + "\" = " + BitConverter.GetBytes(e.Key.ToString()[0])[0].ToString();
+                this.ManipulationWindow.TextBlock_Keyborad.Text = "\"" + e.Key.ToString() + "\" = " + BitConverter.GetBytes(e.Key.ToString()[0])[0].ToString() ;
             }
             catch (Exception ex)
             {
@@ -120,8 +129,17 @@ namespace B3ArduinoControler
             {
                 if (this.isconnect)
                 {
-                    this.serial.Write(" ");
+                    for (int i = 0; i < 500; i++)
+                    {
+                        this.serial.Write(" ");
+                        if (this.serial.BytesToRead > 0)
+                        {
+                            this.serial.ReadByte();
+                            break;
+                        }
+                    }
                 }
+                
                 this.ManipulationWindow.TextBlock_Keyborad.Text = "\" \"= " + BitConverter.GetBytes(' ')[0].ToString();
             }
             catch (Exception ex)

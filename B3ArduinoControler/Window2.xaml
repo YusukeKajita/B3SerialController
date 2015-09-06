@@ -21,6 +21,7 @@
                     <TextBlock Text="UserName : " Width="100"/>
                     <TextBlock x:Name="TextBlock_UserName" Width="100"/>
                 </StackPanel>
+                <Button Content="Test"/>
             </StackPanel>
         </GroupBox>
     </Grid>
