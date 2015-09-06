@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\workspace\B3SerialController\B3SerialController\B3ArduinoControler\App.xaml
-2462529049
+3-85327526
 
-10-432961384
+11-1123648269
 15-1075227541
-MainWindow.xaml;Window1.xaml;
+MainWindow.xaml;Window1.xaml;Window2.xaml;
 
-True
+False
 

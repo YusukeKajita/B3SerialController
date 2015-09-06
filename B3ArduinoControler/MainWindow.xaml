@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:B3ArduinoControler"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525" KeyDown="Master_KeyDown" KeyUp="Master_KeyUp" ResizeMode="NoResize" Topmost="True" WindowStyle="None" AllowsTransparency="True" Background="Transparent" BorderBrush="#CC000000" BorderThickness="5">
+        Title="MainWindow" Height="350" Width="525" ResizeMode="NoResize" Topmost="True" WindowStyle="None" AllowsTransparency="True" Background="Transparent" BorderBrush="#CC000000" BorderThickness="5">
     <Grid Background="#E5FFFFFF" >
         <WrapPanel>
             <GroupBox Header="接続・切断">
@@ -21,22 +21,6 @@
                     <StackPanel Orientation="Horizontal">
                         <Button Content="接続" Width="100" x:Name="Button_Connect" Click="Button_Connect_Click"/>
                         <Button Content="切断" Width="100" x:Name="Button_Disconnect" Click="Button_Disconnect_Click"/>
-                    </StackPanel>
-                </StackPanel>
-            </GroupBox>
-            <GroupBox Header="状態">
-                <StackPanel>
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Connect : " Width="100"/>
-                        <TextBlock x:Name="TextBlock_IsConnect" Width="100"/>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="KeyBord : " Width="100"/>
-                        <TextBlock x:Name="TextBlock_Keyborad" Width="100"/>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="UserName : " Width="100"/>
-                        <TextBlock x:Name="TextBlock_UserName" Width="100"/>
                     </StackPanel>
                 </StackPanel>
             </GroupBox>

@@ -28,3 +28,5 @@ C:\workspace\B3SerialController\B3SerialController\B3ArduinoControler\obj\Debug\
 C:\workspace\B3SerialController\B3SerialController\B3ArduinoControler\obj\Debug\B3ArduinoControler.g.resources
 C:\workspace\B3SerialController\B3SerialController\B3ArduinoControler\obj\Debug\B3ArduinoControler.Properties.Resources.resources
 C:\workspace\B3SerialController\B3SerialController\B3ArduinoControler\obj\Debug\B3ArduinoControler.csproj.GenerateResource.Cache
+C:\workspace\B3SerialController\B3SerialController\B3ArduinoControler\obj\Debug\Window2.g.cs
+C:\workspace\B3SerialController\B3SerialController\B3ArduinoControler\obj\Debug\Window2.baml

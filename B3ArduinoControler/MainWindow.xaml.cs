@@ -22,6 +22,7 @@ namespace B3ArduinoControler
     {
         System.IO.Ports.SerialPort serial;
         private bool isconnect;
+        public Window2 ManipulationWindow;
         public MainWindow()
         {
             InitializeComponent();
@@ -30,7 +31,11 @@ namespace B3ArduinoControler
             {
                 this.isconnect = false;
                 this.MouseLeftButtonDown += (s, e) => this.DragMove();
-                this.TextBlock_IsConnect.Text = this.isconnect.ToString();
+                this.ManipulationWindow = new Window2(this);
+                this.ManipulationWindow.Show();
+
+                this.ManipulationWindow.TextBlock_IsConnect.Text = this.isconnect.ToString();
+
                 this.Closing += MainWindow_Closing;
                 this.TextBox_BaudRate.Text = Properties.Settings.Default.BAUDRATE;
                 this.TextBox_PortNumber.Text = Properties.Settings.Default.COMPORT;
@@ -71,7 +76,7 @@ namespace B3ArduinoControler
                 }
                 sr.Close();
                 fs.Close();
-                this.TextBlock_UserName.Text = System.Environment.MachineName;
+                this.ManipulationWindow.TextBlock_UserName.Text = System.Environment.MachineName;
             }
             catch (Exception ex)
             {
@@ -85,6 +90,7 @@ namespace B3ArduinoControler
             Properties.Settings.Default.BAUDRATE = this.TextBox_BaudRate.Text;
             Properties.Settings.Default.Save();
 
+            this.ManipulationWindow.Close();
             if (this.isconnect)
             {
                 this.serial.Close();
@@ -92,7 +98,7 @@ namespace B3ArduinoControler
             }
         }
 
-        private void Master_KeyDown(object sender, KeyEventArgs e)
+        public void Master_KeyDown(object sender, KeyEventArgs e)
         {
             try
             {
@@ -100,7 +106,7 @@ namespace B3ArduinoControler
                 {
                     this.serial.Write(e.Key.ToString());
                 }
-                this.TextBlock_Keyborad.Text = "\"" + e.Key.ToString() + "\" = " + BitConverter.GetBytes(e.Key.ToString()[0])[0].ToString();
+                this.ManipulationWindow.TextBlock_Keyborad.Text = "\"" + e.Key.ToString() + "\" = " + BitConverter.GetBytes(e.Key.ToString()[0])[0].ToString();
             }
             catch (Exception ex)
             {
@@ -108,7 +114,7 @@ namespace B3ArduinoControler
             }
         }
 
-        private void Master_KeyUp(object sender, KeyEventArgs e)
+        public void Master_KeyUp(object sender, KeyEventArgs e)
         {
             try
             {
@@ -116,7 +122,7 @@ namespace B3ArduinoControler
                 {
                     this.serial.Write(" ");
                 }
-                this.TextBlock_Keyborad.Text = "\" \"= " + BitConverter.GetBytes(' ')[0].ToString();
+                this.ManipulationWindow.TextBlock_Keyborad.Text = "\" \"= " + BitConverter.GetBytes(' ')[0].ToString();
             }
             catch (Exception ex)
             {
@@ -137,7 +143,7 @@ namespace B3ArduinoControler
                     this.serial.Open();
 
                     this.isconnect = true;
-                    this.TextBlock_IsConnect.Text = this.isconnect.ToString();
+                    this.ManipulationWindow.TextBlock_IsConnect.Text = this.isconnect.ToString();
                 }
             }
             catch (Exception ex)
@@ -153,7 +159,7 @@ namespace B3ArduinoControler
                 if (this.isconnect == true)
                 {
                     this.isconnect = false;
-                    this.TextBlock_IsConnect.Text = this.isconnect.ToString();
+                    this.ManipulationWindow.TextBlock_IsConnect.Text = this.isconnect.ToString();
                 }
             }
             catch (Exception ex)
@@ -167,6 +173,7 @@ namespace B3ArduinoControler
             try
             {
                 this.Close();
+
             }
             catch (Exception ex)
             {
